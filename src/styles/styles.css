@@ -34,7 +34,7 @@ html {
   background-color: rgba(255, 255, 255, 0.9);
   z-index: 2;
   overflow: hidden;
-  transition: width 0.3s ease;
+  transition: width 1s ease;
 }
 
 .leftColumn:hover {
@@ -123,6 +123,30 @@ button:hover {
 
 button:active {
   background-color: #004094;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 3;
+  margin: 16px 0;
+  opacity: 1; /* Always visible to indicate interactivity */
+}
+
+.menu-icon span {
+  height: 4px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-icon:hover span {
+  background-color: #007bff;
 }
 
 @media (max-width: 768px) {
